@@ -172,6 +172,3 @@ Both models were evaluated on the held-out validation set (20% of the data, 1,40
 >
 > ⚠️ **Caveat:** Recall on the churn class is still moderate (\~0.48) — the model currently misses more than half of the customers who actually churn. For a real retention campaign, it's worth **lowering the classification threshold** below 0.5 to trade some precision for higher recall, since the cost of missing a churner is usually higher than the cost of a false alarm.
 
-## 📝 License
-
-This project is licensed under the **MIT License** — feel free to use, modify and share.

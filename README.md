@@ -53,6 +53,7 @@ The entire workflow lives in a single well-organized notebook:
 
 | **Section** | **What happens** | 
 | **1. Data Loading & Cleaning** | Load the raw CSV, inspect shape/dtypes, fix `TotalCharges` (stored as text with blanks → coerced to numeric), drop the `customerID` identifier, check for duplicates/nulls | 
+
 | **2. Feature Encoding** | Map binary Yes/No columns (`Partner`, `Dependents`, `PhoneService`, `PaperlessBilling`, `Churn`) to 0/1; normalize service columns (`OnlineSecurity`, `OnlineBackup`, `DeviceProtection`, `TechSupport`, `StreamingTV`, `StreamingMovies`, `MultipleLines`) by collapsing `"No internet/phone service"` into `"No"` | 
 | **3. Exploratory Data Analysis** | Boxplots for `MonthlyCharges` / `TotalCharges`, churn rate breakdown by payment method & contract type, tenure distribution (KDE) split by churn, full numerical correlation heatmap | 
 | **4. Train/Validation Split** | 80/20 split with `train_test_split` (`random_state=0`) | 

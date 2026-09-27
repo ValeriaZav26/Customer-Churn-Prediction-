@@ -163,15 +163,10 @@ jupyter notebook Customer_Churn_Prediction_.ipynb
 
 Both models were evaluated on the held-out validation set (20% of the data, 1,409 customers):
 
-| **Model** | **Train ROC-AUC** | **Valid ROC-AUC** | **Valid PR-AUC** | **Overfit Gap** | 
-| 🌲 Random Forest | 0.9015 | 0.8315 | 0.6344 | 0.070 | 
-| 🚀 XGBoost | 0.8674 | **0.8288** | 0.6326 | **0.039** | 
-
-### Classification report — Churn class (label `1`)
-
-| **Model** | **Precision** | **Recall** | **F1-score** | 
-| Random Forest | 0.644 | 0.481 | 0.551 | 
-| XGBoost | 0.639 | 0.481 | 0.549 | 
+| Model | Train ROC-AUC | Valid ROC-AUC | Valid PR-AUC | Overfit Gap |
+| :--- | :---: | :---: | :---: | :---: |
+| 🌲 Random Forest | 0.9015 | 0.8315 | 0.6344 | 0.070 |
+| 🚀 XGBoost | 0.8674 | **0.8288** | 0.6326 | **0.039** |
 
 > **🏆 Selected model: XGBoost.** Both models reach a very similar validation ROC-AUC (\~0.83), but XGBoost generalizes noticeably better — its train/validation gap is about **half** that of Random Forest (0.039 vs. 0.070), indicating less overfitting.
 >
